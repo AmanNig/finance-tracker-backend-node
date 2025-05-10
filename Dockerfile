@@ -16,7 +16,7 @@ RUN npm install
 
 
 # Generate Prisma Client for production (including Windows binary, if needed)
-RUN npx prisma migrate dev --name init
+RUN npx prisma generate
 
 # Set environment variable to production
 ENV NODE_ENV=production
