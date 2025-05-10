@@ -22,6 +22,6 @@ RUN npx prisma generate
 ENV NODE_ENV=production
 
 # Railway automatically sets the PORT env variable, so listen on process.env.PORT
-
+EXPOSE 8080
 # Start the app
 CMD ["npm", "start"]
